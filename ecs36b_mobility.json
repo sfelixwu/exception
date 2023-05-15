@@ -1,0 +1,30 @@
+[
+    {
+        "name": "send",
+        "params": {
+            "action": "send",
+	    "class_id": "class name",
+	    "object_id": "team name",
+	    "json_object": {}
+        },
+        "returns": {
+            "action": "response",
+	    "response": "jsonstr"
+        }
+    },
+    {
+        "name": "dump2JSON",
+        "params": {
+            "action": "remote_call",
+	    "class_id": "Message",
+	    "object_id": "team_name"
+        },
+        "returns": {
+            "action": "call",
+            "host_url": "1234567890",
+	    "class_id": "transaction",
+	    "object_id": "0000000001",
+	    "response": "jsonstr"
+        }
+    }
+]
