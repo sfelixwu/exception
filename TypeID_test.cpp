@@ -31,7 +31,8 @@ int main(void)
       std::cout << "bad_ptr points to... ";
       std::cout << typeid(*pl_bad_ptr).name() << '\n';
     }
-    catch (const std::bad_typeid& e)
+  // catch (const std::bad_typeid& e)
+    catch (const std::exception& e)
     {
          std::cout << " caught " << e.what() << '\n';
     }
