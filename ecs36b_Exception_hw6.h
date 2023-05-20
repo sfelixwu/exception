@@ -20,7 +20,9 @@ protected:
 public:
   Json::Value data;
   virtual ~ecs36b_Exception() throw () {};
-  virtual const char* what() const throw () { return "ecs36b exception"; };
+  virtual const char* what() const throw () {
+    return strdup(((this->data).toStyledString()).c_str());
+  };
 };
 
 #endif /* _ECS36B_EXCEPTION_ */
